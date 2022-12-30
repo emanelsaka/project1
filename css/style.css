@@ -1,0 +1,814 @@
+*{ 
+    padding: 0;
+    margin: 0;
+}
+
+
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 7000px;  
+}
+
+ a , i{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: pink; 
+ }
+
+ ul{
+    list-style-type: none;
+}
+ .container{
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    
+ }
+ .occasion-title , .plants-title , .what-title , .pricing-title , .tulip-title, .team-title{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 100px;
+}
+.occasion-line , .plants-line , .what-line ,.choose-line , .pricing-line , .tulip-line , .team-line{
+    width: 60px;
+    height: 4px;
+    background-color:pink;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.pp:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.54); 
+}
+.pp:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+.pp:hover .oo{
+    color:white;
+    transition: color 1s;
+}
+
+.pp:hover .zz{
+    color:rgba(213, 205, 205, 0.482);
+    
+}
+.tt::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top:0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.37);
+    }
+    .tt:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    }
+/* general */
+.header-parent{
+    width: 100%;
+    height:60px ;
+    background-color: rgba(128, 128, 128, 0.716);
+    overflow: auto;
+    position: fixed;
+    opacity: .9;
+    top:0;
+    z-index: 3;
+}
+.hicon{
+    font-size: 30px;
+    float: left;
+    margin-left: 10px;
+    background-color: pink;
+    color: rgb(37, 129, 37);
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.header-title{
+    float: left;
+    margin-left: 120px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.header-ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 100px;
+
+}
+.header-ul li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 18px;
+    font-size: 17px;
+    text-transform: capitalize; 
+}
+.header-ul a::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+}
+.header-ul a:hover:after{
+    width: 100%;
+}
+.header-parent a{
+    position: relative;   
+    color: black; 
+}
+.header-ul .homee::after{
+    content:"";
+    position: absolute; 
+    width:100%;
+    height:3px;
+    background-color:white;
+    top:25px; 
+}
+/* header part */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/oo.jpeg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+.home-overlay{
+    background-color: rgba(0, 0, 0, .1); 
+    position: absolute;
+    width:100%;
+    height:100%; 
+}
+.home-content{
+    width:90%;  
+    position: absolute;
+    top:50%;
+    left:50%; 
+    transform:translate(-50%, -50%); 
+}
+.home h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    
+}
+.home p {
+    text-transform: capitalize;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    color: black;
+}
+.btn{
+    width:130px ;
+    padding: 15px 0;
+    border-radius:5px ;
+    font-size: 18px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    
+}
+.btn1{
+     background-color: pink; 
+    margin-right: 10px;
+}
+.btn2{
+    background-color: rgb(37, 129, 37);
+    color: white;
+}
+.btn:hover{
+    opacity: .7;
+}
+/* section one */
+.occasion{
+    position: relative;
+    height: 100vh;
+}
+
+.occasion-parent{
+    overflow: auto;
+    margin-top: 100px; 
+    margin-left: 90px;
+    width: 100%;
+} 
+.occ{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    float: left; 
+    text-align: center;
+    position: relative;
+}
+.occ1{
+    margin-left: 140px;
+}
+.occ2{
+    margin: 0 80px;
+}
+
+.occ h2{
+    padding: 5px 0; 
+    text-transform: capitalize;
+}
+.occ p {
+    padding: 10px 0;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.538);
+}
+.occ i {
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+
+/* section two */
+.plants{
+    position: relative;
+    height: 140vh;
+    margin-top: -50px;
+    background-color: rgba(128, 128, 128, 0.151);
+}
+.parent-1 ,.parent-2{
+    overflow: auto; 
+    margin-top:100px;
+    width: 100%;
+    margin-left: 160px; 
+}
+ .plan{
+    float: left;
+    text-align: center;
+    position: relative
+ }
+
+.p-1 , .p-3{
+    margin-left:70px;
+}
+.p-2 , .p-4{
+    margin: 0 80px;
+}
+.plan i {
+    background-color: azure;
+    font-size: 20px;
+    padding: 10px;
+}
+.plan p , h3 {
+    text-transform: capitalize;
+}
+.plan h3{
+    color: green;
+}
+.plan-info{
+    position: absolute;
+    top: 40%;
+    left:0;
+    right: 0;
+    bottom: 40%;
+}
+.plan-overlay::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right:0;
+    left: 0; 
+}
+ .plan:hover .plan-overlay{
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    right:0;
+    left:-10%;
+    bottom:0;
+    background-color: black;
+    opacity: .7;
+    transition: 1s;
+} 
+.ip{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+
+}
+.plan:hover .ip{
+    visibility:visible;
+    opacity: 5;
+}
+.hp{
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.plan:hover .hp{
+    visibility:visible;
+    opacity: 6;
+}
+.ai{
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+}
+.plan:hover .ai{
+    visibility:visible;
+    opacity: 9; 
+}
+/* section three */
+.what{
+    position: relative;
+    height: 120vh;
+}
+
+.what .container{
+    width: 100%;
+}
+.parent-3 , .parent-4{
+    overflow: auto;
+    margin-top: 100px;
+    width: 100%;
+}
+.parent-4{
+margin-top: 40px;
+}
+ .box{
+    width: 350px;
+    height: 170px;
+    border: 1px solid gray;
+    float: left;
+    position: relative;
+ }
+ .b1 , .b3{
+    margin-left: 180px;
+ }
+ .b2 , .b4{
+    margin: 0 50px; 
+ }
+.box h2{
+    padding: 30px 40px ;
+}
+.box i {
+    padding: 0 30px;
+}
+.what h2{
+    text-transform: capitalize;
+}
+
+.what p {
+    color: black;
+    padding: 5px;
+    text-align: center;
+    color: gray;
+    text-transform: lowercase;
+}
+/* section four */
+.choose{
+    position: relative;
+    height: 100vh;
+    margin-top: -100px;
+    background-color: rgba(128, 128, 128, 0.151);
+}
+.choose-text{
+    float:left;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    position: relative;
+}
+.choose-img{
+    float:right;
+    position: relative;
+    margin-top:100px ;
+    margin-right: -100px; 
+  }
+
+.choose p{
+    padding: 50px 0;
+    color: black;
+}
+
+.choose li{
+    padding: 20px 0;
+}
+
+.choose-line{
+    margin-left: -4px;
+}
+.circle1 , .circle2 , .circle3{
+    width: 8px;
+    height: 8px;
+    border: 1px solid grey;
+    float:left;
+    border-radius: 10px;
+  }
+  .circle1{
+    margin-left: 300px;
+    background-color: green;
+  }
+  .circle2{
+    margin: 0 15px;
+  }
+  .circle2:hover{
+    background-color:green;
+  }
+  .circle3:hover{
+    background-color:green;
+  }
+  /* section five */
+  .shop{
+    position: relative;
+    height: 50vh;
+    background-image: url(../images/hh.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    }
+  .shop-overlay{
+    background-color: rgba(0, 0, 0, .3); 
+    position: absolute;
+    width:100%;
+     height:100%;  
+  }
+  .sh{
+    width: 150px;
+    height: 100px;
+    float: left;
+    
+    margin: 7.8%; 
+    text-align: center;
+
+  }
+  .sh1{
+     margin-right: 5%;  
+    }
+.shop i {
+     padding: 10px 0; 
+     font-size: 38px;
+     
+}
+.shop h1{
+    font-size:35px ;
+}
+.shop p{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+}
+/* section six */
+.pricing{
+    position: relative;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.151);
+}
+
+.pricing .container{
+    margin-left: 250px;
+}
+
+.pricing-parent{
+    overflow: auto;
+    margin: 100px 0;
+}
+
+.pri {
+    width: 280px;
+    height: 360px;
+    border: 1px solid gray;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.pri{
+    margin: 0 30px;
+}
+
+.pri h2{
+    padding-top: 20px ;
+    text-transform: capitalize;
+}
+
+.trj{
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    border: 2px solid pink;
+    margin: auto;
+    margin-top: 20px;
+}
+.pricing h1{
+    font-size: 40px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.pricing .p1{
+font-size: 17px;
+text-transform: uppercase;
+font-weight: bold;
+color: black;
+
+}
+
+.pricing .p2{
+    padding: 20px 0;
+    word-spacing: 1px;
+    color: gray;
+    line-height: 20px;
+}
+.pricing button{
+    width: 130px;
+    height: 30px;
+    margin: 20px 0;
+    border:2px solid pink;
+    text-transform: capitalize;
+
+}
+.pri:hover h2{
+    color: rgb(235, 18, 18);
+}
+.pri:hover h1{
+    color: rgb(235, 18, 18);
+}
+.pri:hover .p1{
+    color: rgb(235, 18, 18);
+}
+/* section seven */
+.prands{
+    position: relative;
+    height: 50vh;
+    background-image: url(../images/qq.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    }
+  .prands-overlay{
+    background-color: rgba(0, 0, 0, .2); 
+    position: absolute;
+    width:100%;
+     height:100%;  
+     overflow: auto;
+  }
+  .pr, .pr2{
+    width: 750px;
+    height: 300px;
+    float: left;
+    margin-top: 35px;
+  }
+  .pr2{
+    float: right;
+  }
+  .lazurde{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    background-image:url(../images/laz.jpeg);
+    background-size: cover;
+    position: absolute;
+    top:140px;
+    left:18%;
+  }
+  .laz {
+    position: absolute;
+    top:170px;
+    left: 26%;
+  }    
+  
+  .laz-para{
+    position: absolute;
+    top:250px;
+    left: 18%;
+  }
+  .siran {
+    background-image:url(../images/sir.jpeg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    background-size: cover;
+    position: absolute;
+    bottom:130px;
+    right:40%; 
+  }
+  .sir {
+    position: absolute;
+    top:170px;
+    right:26%;
+  }    
+  .sir-para{
+    position: absolute;
+    top:260px;
+    right:24%;
+  }
+  .prands h2 , p{
+    text-transform: capitalize;
+    color: white;
+  }
+  .prands p{
+    font-size: 16px;
+  }
+  .p1{
+    color:pink;
+  }
+  /* section eight */
+  .tulip{
+    position: relative;
+    height: 100vh;
+    text-align: center;
+  }
+  .tulip .container{
+     margin-left: 160px;  
+  }
+.tulip-content{
+    overflow: auto;
+    margin:100px 0;
+
+} 
+.tulip-item{
+    float: left;
+    width: 28%;
+    background-color: rgba(128, 128, 128, 0.151);
+    padding: 18px 18px;
+    position: relative;
+}
+.t-2{
+    margin: 0 3%;
+}
+.tulip-img{
+    width: 90%;
+    margin: auto;
+    position: relative; 
+}
+.tulip-img img {
+    width: 100%;
+}
+.tulip-overlay{
+    position: absolute;
+    top:0;
+    right:0; 
+    bottom: 0; 
+    left: 0;
+} 
+.tulip-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    background-color: rgba(128, 128, 128, 0.76);   
+}
+.tulip-overlay i{
+    line-height: 40px;
+}
+.tulip-overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+}
+.tulip-info h2 , .span {
+padding: 10px 0;
+text-transform: capitalize;
+}
+.tulip-item:hover .tulip-overlay{
+    visibility: visible;
+}
+
+.tulip-item:hover h2{
+    color: azure;
+}
+.tulip-item:hover span{
+    color: rgba(88, 94, 94, 0.549);
+}
+/* section nine */
+.team {
+    position: relative;
+    height: 110vh;
+    
+}
+.team-content{
+    overflow:auto ;
+    margin: 100px 0;
+
+}
+.team .container{
+    margin-left: 240px;  
+ }
+.team-item{
+    width: 300px;
+    height: 490px;
+    border: 1px solid rgba(239, 215, 215, 0.888);
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.it2 {
+    margin: 0 70px;
+}
+
+.info{
+    float: left;
+     padding: 15px; 
+}
+.team-info{
+    overflow: auto;
+    margin-left: 20px;    
+}
+.team-info .i1{
+    text-transform: capitalize;
+}
+.team-item h3{
+    padding: 10px 0;
+    padding-left: 7px; 
+    text-transform: uppercase;
+}
+.team-item p{
+    text-transform: capitalize;
+    color: gray;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.ti::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top:0;
+    left:0;
+    background-color:rgba(152, 151, 149, 0.263); 
+    }
+.ti:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    }
+    /* section ten */
+.last{
+    position: relative; 
+    background-color: rgba(128, 128, 128, 0.151);
+    height: 40vh;
+    margin-top: -40px;
+    text-align: center;
+    }
+.wt {
+        margin-top: 70px;
+    }
+.last-links{
+    overflow: auto;
+    margin-left:41.1%;
+    }
+.div1{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    float: left;
+    margin: 2px;
+    margin-top: 30px;
+    background-color:rgb(229, 160, 183);
+    position: relative;
+    z-index: 1;
+    
+}
+.last  i {
+    font-size: 25PX;
+    padding: 8px;
+    color: white;    
+}
+.last p{
+    margin-top: 40px;
+    color: gray;
+    }
+    .last-links .div1:after{
+    position: absolute;
+    content: "";
+    opacity: 0;
+    background-color: #525966;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition:1s;
+    }
+    .last-links .div1:hover:after{
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    border-radius:150px;
+    z-index: -1;
+    }
+     
